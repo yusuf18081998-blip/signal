@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal - Sign In / Create Account</title>
+    <!-- Alohida style fayli -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+            </div>
+            <span class="logo-text">SIGNAL</span>
+        </div>
+
+        <div class="header-text" id="formHeader">
+            <h2 id="titleText">Welcome back</h2>
+            <p id="subTitleText">Sign in to continue to your dashboard</p>
+        </div>
+
+        <div id="errorBox" class="error-msg"></div>
+
+        <form id="authForm">
+            <div class="input-group">
+                <input type="email" id="emailInput" placeholder="EMAIL" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="passwordInput" placeholder="PASSWORD" required>
+            </div>
+
+            <button type="submit" class="sign-in-btn" id="submitBtn">Sign in</button>
+        </form>
+
+        <div class="footer-text" id="switchText">
+            No account yet? <a id="toggleMode">Create one</a>
+        </div>
+    </div>
+
+    <!-- Alohida script fayli -->
+    <script src="script.js"></script>
+</body>
+</html>
